@@ -53,6 +53,9 @@ jobs:
         # Поэтому подключаемся к 127.0.0.1:5432
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
+        SECRET_KEY: test_secret_key
+        DEBUG: "True"
+        ALLOWED_HOSTS: "*"
       # Вызываем flake8 и указываем ему,
       # что нужно проверить файлы только в папке backend/
       run: |
